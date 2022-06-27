@@ -33,6 +33,7 @@ def binary(value):
     """
     return [bin(char) for char in split(value)]
 
+
 def byte(value):
     """
     convert them in octet by adding if you need 0 at the beginning
