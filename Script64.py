@@ -43,7 +43,7 @@ def byte(value):
     Returns: tab with octet numbers
 
     """
-    return [bin(char) for char in split(value)]
+    return [bytes(char) for char in binary(value)]
 
 
 def to_string(arr):
