@@ -1,7 +1,10 @@
 def split(str):
     return [ord(char) for char in str]
 
-
+def binary(values):
+    values = split(values)
+    return [bin(char) for char in values]
+    print(binary(values))
 """
 Transform the octet list to a base64 friendly list
 """
@@ -25,3 +28,4 @@ values = input("Enter the Values: ")
 
 # Driver code
 print(split(values))
+print(binary(values))
