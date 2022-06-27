@@ -24,7 +24,7 @@ def to_ascii(char):
 
 def binary(value):
     """
-    we are going convert this numbers in binary
+        we are going convert this numbers in binary
     Args:
         value: tab with letters converted with ascii tab
 
@@ -36,7 +36,7 @@ def binary(value):
 
 def byte(value):
     """
-    convert them in octet by adding if you need 0 at the beginning
+        convert them in octet by adding if you need 0 at the beginning
     Args:
         value: tab with binary numbers
 
@@ -48,7 +48,7 @@ def byte(value):
 
 def to_string(arr):
     """
-    will pul all the element in one string
+        will pul all the element in one string
     Args:
         arr: tab with octet numbers
 
@@ -83,7 +83,7 @@ def to_base64(arr):
 
 def refill_arr(arr):
     """
-    will put if its need O to complete the last element
+        will put if its need O to complete the last element
     Args:
         arr: an array with base 64 elements
 
@@ -95,7 +95,7 @@ def refill_arr(arr):
 
 def bin_to_ascii(arr):
     """
-    we convert array with base 64 elements to base 10
+        we convert array with base 64 elements to base 10
     Args:
         arr: an array with base 64 elements
 
@@ -107,7 +107,7 @@ def bin_to_ascii(arr):
 
 def to_char(arr):
     """
-    we match numbers with the ascii tab
+        we match numbers with the ascii tab
     Args:
         arr: an array with base 10 elements
 
@@ -119,11 +119,11 @@ def to_char(arr):
 
 def refill_string(str):
     """
-    will add "=" as many as we need to have a 8 multiple at the end for the string
+        will add "=" as many as we need to have a 8 multiple at the end for the string
     Args:
         str: an array with ascii's letters
 
-    Returns: string of base 64 letter 
+    Returns: string of base 64 letter
 
     """
     return str
