@@ -10,16 +10,16 @@ def split(str):
     return [char for char in str]
 
 
-def to_ascii(char):
+def to_ascii(arr):
     """
         we are going to convert those letters with a ascii tab
     Args:
-        char: tab with letters
+        arr: tab with letters
 
     Returns: tab with letters converted with ascii tab
 
     """
-    return ord(char)
+    return [ord(char) for char in arr]
 
 
 def binary(value):
