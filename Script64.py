@@ -1,3 +1,4 @@
+"""We are going to convert your letters in base 64 letters which is used to transfert mail  """
 def split(str):
     return [ord(char) for char in str]
 
