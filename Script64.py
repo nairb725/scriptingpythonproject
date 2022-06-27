@@ -1,8 +1,8 @@
 def split(str):
     """
-
+        that will split element and put them in an array
     Args:
-        str:
+        str: 
 
     Returns:
 
@@ -35,11 +35,11 @@ def byte(value):
 
 def to_base64(arr):
     """
-
+        we are going to convert octet in base 64
     Args:
-        arr:
+        arr: we convert the octet in base 64 with 6 characters per elements
 
-    Returns:
+    Returns: return an array with base 64 elements
 
     """
     return_arr = []
