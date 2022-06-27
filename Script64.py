@@ -19,8 +19,7 @@ def binary(value):
     Returns:
 
     """
-    value = split(value)
-    return [bin(char) for char in value]
+    return [bin(char) for char in split(value)]
 
 
 def to_base64(arr):
