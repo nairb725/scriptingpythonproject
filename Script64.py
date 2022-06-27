@@ -22,28 +22,28 @@ def to_ascii(arr):
     return [ord(char) for char in arr]
 
 
-def binary(value):
+def binary(arr):
     """
         we are going convert this numbers in binary
     Args:
-        value: tab with letters converted with ascii tab
+        arr: tab with letters converted with ascii tab
 
     Returns: tab with binary numbers
 
     """
-    return [bin(char) for char in split(value)]
+    return [bin(char) for char in arr]
 
 
-def byte(value):
+def byte(arr):
     """
         convert them in octet by adding if you need 0 at the beginning
     Args:
-        value: tab with binary numbers
+        arr: tab with binary numbers
 
     Returns: tab with octet numbers
 
     """
-    return [bytes(char) for char in binary(value)]
+    return [bytes(char) for char in arr]
 
 
 def to_string(arr):
