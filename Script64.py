@@ -1,3 +1,26 @@
+def main(values):
+    ticket_1 = split(values)
+    print(ticket_1)
+    ticket_2 = to_ascii(ticket_1)
+    print(ticket_2)
+    ticket_3 = binary(ticket_2)
+    print(ticket_3)
+    ticket_4 = byte(ticket_3)
+    print(ticket_4)
+    ticket_5 = to_string(ticket_4)
+    print(ticket_5)
+    ticket_6 = to_base64(ticket_5)
+    print(ticket_6)
+    ticket_7 = refill_arr(ticket_6)
+    print(ticket_7)
+    ticket_8 = bin_to_ascii(ticket_7)
+    print(ticket_8)
+    ticket_9 = to_char(ticket_8)
+    print(ticket_9)
+    ticket_10 = refill_string(ticket_9)
+    print(ticket_10)
+
+
 def split(str):
     """
         that will split element and put them in an array
@@ -31,7 +54,7 @@ def binary(arr):
     Returns: tab with binary numbers
 
     """
-    return [bin(char) for char in arr]
+    return [bin(int(char)) for char in arr]
 
 
 def byte(arr):
@@ -132,7 +155,4 @@ def refill_string(str):
 # Taking an input values from user
 values = input("Enter the Values: ")
 
-# Driver code
-print(split(values))
-print(binary(values))
-print(byte(values))
+main(values)
