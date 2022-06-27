@@ -1,21 +1,37 @@
-"""We are going to convert your letters in base 64 letters which is used to send mail  """
-
-
 def split(str):
+    """
+
+    Args:
+        str:
+
+    Returns:
+
+    """
     return [ord(char) for char in str]
 
 
 def binary(value):
+    """
+
+    Args:
+        value:
+
+    Returns:
+
+    """
     value = split(value)
     return [bin(char) for char in value]
 
 
-"""
-Transform the octet list to a base64 friendly list
-"""
-
-
 def to_base64(arr):
+    """
+
+    Args:
+        arr:
+
+    Returns:
+
+    """
     return_arr = []
     str = ""  # the global string
     n = 6  # the index to cut the string for the base64
