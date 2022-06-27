@@ -10,16 +10,16 @@ def split(str):
     return [char for char in str]
 
 
-def to_ascii(char):
+def to_ascii(arr):
     """
         we are going to convert those letters with a ascii tab
     Args:
-        char: tab with letters
+        arr: tab with letters
 
     Returns: tab with letters converted with ascii tab
 
     """
-    return ord(char)
+    return [ord(char) for char in arr]
 
 
 def binary(value):
@@ -43,7 +43,7 @@ def byte(value):
     Returns: tab with octet numbers
 
     """
-    return [bin(char) for char in split(value)]
+    return [bytes(char) for char in binary(value)]
 
 
 def to_string(arr):
@@ -55,30 +55,30 @@ def to_string(arr):
     Returns: all the octet in one string
 
     """
-    return
+    str = ""
+    for i in arr:
+        str += i
+
+    return str
 
 
-def to_base64(arr):
+def to_base64(str):
     """
         we are going to convert octet in base 64 and put all the elements in an array
     Args:
-        arr: we convert the octet in base 64 with 6 characters per elements
+        str: we convert the octet in base 64 with 6 characters per elements
 
     Returns: return an array with base 64 elements
 
     """
-    return_arr = []
-    str = ""  # the global string
+    arr = []
     n = 6  # the index to cut the string for the base64
-
-    for i in arr:
-        str += i
 
     # split the whole string into string of 6 character each
     for index in range(0, len(str), n):
-        return_arr.append(str[index: index + n])
+        arr.append(str[index: index + n])
 
-    return return_arr
+    return arr
 
 
 def refill_arr(arr):
