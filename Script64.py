@@ -2,9 +2,9 @@ def split(str):
     """
         that will split element and put them in an array
     Args:
-        str: 
+        str: User's input
 
-    Returns:
+    Returns: array with user's split input
 
     """
     return [char for char in str]
@@ -12,11 +12,11 @@ def split(str):
 
 def to_ascii(char):
     """
-
+        we are going to convert those letters with a ascii tab
     Args:
-        char:
+        char: tab with letters
 
-    Returns:
+    Returns: tab with letters converted with ascii tab
 
     """
     return ord(char)
@@ -24,22 +24,22 @@ def to_ascii(char):
 
 def binary(value):
     """
-
+    we are going convert this numbers in binary
     Args:
-        value:
+        value: tab with letters converted with ascii tab
 
-    Returns:
+    Returns: tab with binary numbers
 
     """
     return [bin(char) for char in split(value)]
 
 def byte(value):
     """
-
+    convert them in octet by adding if you need 0 at the beginning
     Args:
-        value:
+        value: tab with binary numbers
 
-    Returns:
+    Returns: tab with octet numbers
 
     """
     return [bin(char) for char in split(value)]
@@ -47,11 +47,11 @@ def byte(value):
 
 def to_string(arr):
     """
-
+    will pul all the element in one string
     Args:
-        arr:
+        arr: tab with octet numbers
 
-    Returns:
+    Returns: all the octet in one string
 
     """
     return
@@ -59,7 +59,7 @@ def to_string(arr):
 
 def to_base64(arr):
     """
-        we are going to convert octet in base 64
+        we are going to convert octet in base 64 and put all the elements in an array
     Args:
         arr: we convert the octet in base 64 with 6 characters per elements
 
