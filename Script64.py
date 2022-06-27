@@ -1,8 +1,9 @@
-def split(Values):
-    return [char for char in Values]
+def split(str):
+    return [ord(char) for char in str]
+
 
 # Taking an input values from user
-Values = input("Enter the Values: ")
+values = input("Enter the Values: ")
 
 # Driver code
-print(split(Values))
+print(split(values))
