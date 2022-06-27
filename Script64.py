@@ -1,13 +1,17 @@
 def split(str):
     return [ord(char) for char in str]
 
+
 def binary(values):
     values = split(values)
     return [bin(char) for char in values]
-    print(binary(values))
+
+
 """
 Transform the octet list to a base64 friendly list
 """
+
+
 def toBase64(arr):
     return_arr = []
     str = ""  # the global string
