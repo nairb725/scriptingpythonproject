@@ -7,7 +7,19 @@ def split(str):
     Returns:
 
     """
-    return [ord(char) for char in str]
+    return [char for char in str]
+
+
+def to_ascii(char):
+    """
+
+    Args:
+        char:
+
+    Returns:
+
+    """
+    return ord(char)
 
 
 def binary(value):
@@ -33,6 +45,18 @@ def byte(value):
     return [bin(char) for char in split(value)]
 
 
+def to_string(arr):
+    """
+
+    Args:
+        arr:
+
+    Returns:
+
+    """
+    return
+
+
 def to_base64(arr):
     """
         we are going to convert octet in base 64
@@ -54,6 +78,54 @@ def to_base64(arr):
         return_arr.append(str[index: index + n])
 
     return return_arr
+
+
+def refill_arr(arr):
+    """
+
+    Args:
+        arr:
+
+    Returns:
+
+    """
+    return arr
+
+
+def bin_to_ascii(arr):
+    """
+
+    Args:
+        arr:
+
+    Returns:
+
+    """
+    return arr
+
+
+def to_char(arr):
+    """
+
+    Args:
+        arr:
+
+    Returns:
+
+    """
+    return arr
+
+
+def refill_string(str):
+    """
+
+    Args:
+        str:
+
+    Returns:
+
+    """
+    return str
 
 
 # Taking an input values from user
