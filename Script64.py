@@ -21,6 +21,17 @@ def binary(value):
     """
     return [bin(char) for char in split(value)]
 
+def byte(value):
+    """
+
+    Args:
+        value:
+
+    Returns:
+
+    """
+    return [bin(char) for char in split(value)]
+
 
 def to_base64(arr):
     """
@@ -51,3 +62,4 @@ values = input("Enter the Values: ")
 # Driver code
 print(split(values))
 print(binary(values))
+print(byte(values))
