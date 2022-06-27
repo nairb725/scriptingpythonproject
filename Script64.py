@@ -83,11 +83,11 @@ def to_base64(arr):
 
 def refill_arr(arr):
     """
-
+    will put if its need O to complete the last element
     Args:
-        arr:
+        arr: an array with base 64 elements
 
-    Returns:
+    Returns: an array with base 64 elements completed
 
     """
     return arr
@@ -95,11 +95,11 @@ def refill_arr(arr):
 
 def bin_to_ascii(arr):
     """
-
+    we convert array with base 64 elements to base 10
     Args:
-        arr:
+        arr: an array with base 64 elements
 
-    Returns:
+    Returns: an array with base 10 elements
 
     """
     return arr
@@ -107,11 +107,11 @@ def bin_to_ascii(arr):
 
 def to_char(arr):
     """
-
+    we match numbers with the ascii tab
     Args:
-        arr:
+        arr: an array with base 10 elements
 
-    Returns:
+    Returns:  an array with ascii's letters
 
     """
     return arr
@@ -119,11 +119,11 @@ def to_char(arr):
 
 def refill_string(str):
     """
-
+    will add "=" as many as we need to have a 8 multiple at the end for the string
     Args:
-        str:
+        str: an array with ascii's letters
 
-    Returns:
+    Returns: string of base 64 letter 
 
     """
     return str
