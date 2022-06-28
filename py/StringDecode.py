@@ -76,7 +76,7 @@ def divide_in_eight_part(str):
     """
         will divide them in part with eight elements each
     Args:
-        arr: one string with all elements
+        str: one string with all elements
 
     Returns:  an array with eight element in each part
 
