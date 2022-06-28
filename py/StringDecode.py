@@ -10,7 +10,20 @@ def to_string(base64):
     return
 
 
-def binary():
+def remove("="):
+
+    return
+
+def array():
+
+    return
+
+
+def num():
+
+    return
+
+def binary(number):
     """
             decode a number to binary mode
         Args:
@@ -22,7 +35,19 @@ def binary():
     return
 
 
-def ascii():
+def add ():
+
+    return
+
+def remove_zero ():
+
+    return
+
+
+
+def ascii(binary):
+
+
     """
             decode a binary to ascii
         Args:
@@ -32,6 +57,7 @@ def ascii():
 
         """
     return
+
 
 
 def alphabet():
@@ -44,3 +70,10 @@ def alphabet():
 
         """
     return
+
+
+def byte ():
+
+    return
+
+
