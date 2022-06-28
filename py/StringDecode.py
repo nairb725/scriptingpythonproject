@@ -100,7 +100,7 @@ def remove_last_element(arr):
     Returns:  array with user's binary numbers without the last element
 
     """
-    if(arr[len(arr)-1] != 8):
+    if arr[len(arr) - 1] != 8:
         arr.pop()
     return arr
 
@@ -132,11 +132,11 @@ def to_ascii(arr):
 
 def to_alphabet(arr):
     """
-
+    convert ascii numbers into letters
     Args:
-        arr:
+        arr: array with ascii numbers
 
-    Returns:
+    Returns: array with alphabet letters
 
     """
-    return arr
+    return [chr(char) for char in arr]
