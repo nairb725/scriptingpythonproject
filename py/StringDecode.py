@@ -1,3 +1,14 @@
+def to_string(base64):
+    """
+
+    Args:
+        base64:
+
+    Returns:
+
+    """
+    return
+
 
 def binary():
     """
