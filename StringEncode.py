@@ -1,3 +1,6 @@
+from math import ceil, floor
+
+
 def main(str):
     """
         encode a string to base64
@@ -159,7 +162,7 @@ def refill_string(str):
     Returns: string of base 64 letter
 
     """
-    return str
+    return str.ljust(ceil(len(str)/8)*8, "=")
 
 
 # Taking an input values from user
