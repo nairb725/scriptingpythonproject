@@ -25,6 +25,18 @@ def to_base64(str):
     return step_11
 
 
+def elts_to_ascii(arr):
+    """
+        Convert all char in the array to its equivalent in ascii
+    Args:
+        arr: list with char
+
+    Returns: tab with ascii value
+
+    """
+    return [ord(char) for char in arr]
+
+
 def binary(arr):
     """
         we are going convert this numbers in binary
@@ -113,4 +125,4 @@ def refill_string(str):
     Returns: string of base 64 letter
 
     """
-    return str.ljust(ceil(len(str)/8)*8, "=")
+    return str.ljust(ceil(len(str) / 8) * 8, "=")

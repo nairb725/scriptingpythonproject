@@ -11,18 +11,6 @@ def string_split(str):
     return [char for char in str]
 
 
-def elts_to_ascii(arr):
-    """
-        Convert all char in the array to its equivalent in ascii
-    Args:
-        arr: list with char
-
-    Returns: tab with ascii value
-
-    """
-    return [ord(char) for char in arr]
-
-
 def array_to_string(arr):
     """
         Put all the element of an array in one string
