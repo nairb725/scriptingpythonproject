@@ -13,7 +13,7 @@ def to_base64(str):
     step_1 = split(str)
     step_2 = to_ascii(step_1)
     step_3 = binary(step_2)
-    step_4 = byte(step_3)
+    step_4 = make_octet(step_3)
     step_5 = to_string(step_4)
     step_6 = cut_bin_6char(step_5)
     step_7 = refill_arr(step_6)
@@ -60,7 +60,7 @@ def binary(arr):
     return [str(bin(int(char)))[2:] for char in arr]
 
 
-def byte(arr):
+def make_octet(arr):
     """
         convert them in octet by adding if you need 0 at the beginning
     Args:
