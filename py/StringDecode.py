@@ -10,11 +10,11 @@ def to_string(base64):
     return
 
 
-def binary():
+def binary(str):
     """
         that will put user's elements in a string
     Args:
-        number: string with user's input
+        str: string with user's input
 
     Returns: string with user's elements
 
@@ -22,47 +22,47 @@ def binary():
     return
 
 
-
-def remove_equal():
-
+def remove_equal(str):
     """
         if there is an "=" go delete it
     Args:
-        number: string with user's input maybe with equal
+        str: string with user's input maybe with equal
 
     Returns: string with user's input without equal
 
     """
     return
 
-def array():
 
+def array(arr):
     """
         put all element in an array
     Args:
-        number: string with user's input without equal
+        arr: string with user's input without equal
 
     Returns: array with user's elements
 
     """
     return
 
-def alphabet():
+
+def alphabet(arr):
     """
        match the numbers with the alphabet
     Args:
-        number: array with user's elements
+        arr: array with user's elements
 
     Returns: array with user's elements
 
     """
     return
 
-def binary(number):
+
+def binary(arr):
     """
         convert numbers into binary mode
     Args:
-        number: array with user's elements
+        arr: array with user's elements
 
     Returns: array with user's binary numbers
 
@@ -70,44 +70,47 @@ def binary(number):
     return
 
 
-def add ():
+def add(arr):
     """
         if character is not equal to 6 add 0 at the beginning
     Args:
-        number:  array with user's binary numbers
+        arr:  array with user's binary numbers
 
     Returns:  array with user's binary numbers with added 0
 
     """
     return
 
-def one_string ():
+
+def one_string(arr):
     """
         will contains all elements in 1 string
     Args:
-        number:  array with user's binary numbers with added 0
+        arr:  array with user's binary numbers with added 0
 
     Returns:  one string with all elements
 
     """
     return
 
-def divide_in_eight_part ():
+
+def divide_in_eight_part(arr):
     """
         will divide them in part with 8 elements each
     Args:
-        number: one string with all elements
+        arr: one string with all elements
 
     Returns:  an array with eight element in each part
 
     """
     return
 
-def remove_zero ():
+
+def remove_zero(arr):
     """
         if character is not equal to 6 add 0 at the beginning
     Args:
-        number:  array with user's binary numbers
+        arr:  array with user's binary numbers
 
     Returns:  array with user's binary numbers with added 0
 
@@ -116,14 +119,11 @@ def remove_zero ():
     return
 
 
-
-def ascii():
-
-
+def ascii(arr):
     """
         convert binary numbers in ascii numbers
     Args:
-        number:  array with user's binary numbers
+        arr:  array with user's binary numbers
 
     Returns: array with ascii numbers
 
@@ -131,12 +131,11 @@ def ascii():
     return
 
 
-
-def alphabet():
+def alphabet(arr):
     """
         convert ascii numbers in alphabet
     Args:
-        number: array with ascii numbers
+        arr: array with ascii numbers
 
     Returns: array with alphabet letters
 
@@ -144,15 +143,13 @@ def alphabet():
     return
 
 
-def byte ():
+def byte(arr):
     """
         put elements in one string
     Args:
-        number: array with alphabet letters
+        arr: array with alphabet letters
 
     Returns: string with user's result
 
     """
     return
-
-
