@@ -25,7 +25,7 @@ def main(str):
     print(ticket_8)
     ticket_9 = to_char(ticket_8)
     print(ticket_9)
-    ticket_10 = to_string(ticket_8)
+    ticket_10 = to_string(ticket_9)
     print(ticket_10)
     ticket_11 = refill_string(ticket_10)
     return ticket_11
@@ -147,7 +147,7 @@ def to_char(arr):
     Returns: an array with ascii's letters
 
     """
-    return arr
+    return [chr(char + 65) for char in arr]
 
 
 def refill_string(str):
