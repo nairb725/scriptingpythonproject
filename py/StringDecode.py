@@ -1,22 +1,44 @@
-def to_string(base64):
+
+def binary():
     """
-
+        that will put user's elements in a string
     Args:
-        base64:
+        number: string with user's input
 
-    Returns:
+    Returns: string with user's elements
 
     """
     return
 
 
-def remove("="):
 
+def remove_equal():
+
+    """
+        if there is an "=" go delete it
+    Args:
+        number: string with user's input maybe with equal
+
+    Returns: string with user's input without equal
+
+    """
     return
 
 def array():
 
+    """
+        put all element in an array
+    Args:
+        number: string with user's input without equal
+
+    Returns: array with user's elements
+
+    """
     return
+
+
+
+
 
 
 def num():
