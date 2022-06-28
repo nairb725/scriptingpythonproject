@@ -10,19 +10,18 @@ def to_string(base64):
     Returns: the string user value
 
     """
-    return
-
-
-def binary(str):
-    """
-        that will put user's elements in a string
-    Args:
-        str: string with user's input
-
-    Returns: string with user's elements
-
-    """
-    return
+    step_1 = remove_equal(base64)
+    step_2 = string_split(step_1)
+    step_3 = elts_to_ascii(step_2)
+    step_4 = make_octet(step_3)
+    step_5 = array_to_string(step_4)
+    step_6 = cut_bin_6char(step_5)
+    step_7 = refill_arr(step_6)
+    step_8 = bin_to_base10(step_7)
+    step_9 = to_char(step_8)
+    step_10 = array_to_string(step_9)
+    step_11 = array_to_string(step_10)
+    return step_11
 
 
 def remove_equal(str):
@@ -34,7 +33,7 @@ def remove_equal(str):
     Returns: string with user's input without equal
 
     """
-    return
+    return str
 
 
 def array(arr):
@@ -46,19 +45,7 @@ def array(arr):
     Returns: array with user's elements
 
     """
-    return
-
-
-def alphabet(arr):
-    """
-       match the numbers with the alphabet
-    Args:
-        arr: array with user's elements
-
-    Returns: array with user's elements
-
-    """
-    return
+    return arr
 
 
 def binary(arr):
@@ -70,7 +57,7 @@ def binary(arr):
     Returns: array with user's binary numbers
 
     """
-    return
+    return arr
 
 
 def add(arr):
@@ -82,7 +69,7 @@ def add(arr):
     Returns:  array with user's binary numbers with added 0
 
     """
-    return
+    return arr
 
 
 def one_string(arr):
@@ -94,7 +81,7 @@ def one_string(arr):
     Returns:  one string with all elements
 
     """
-    return
+    return arr
 
 
 def divide_in_eight_part(arr):
@@ -106,7 +93,7 @@ def divide_in_eight_part(arr):
     Returns:  an array with eight element in each part
 
     """
-    return
+    return arr
 
 
 def remove_zero(arr):
@@ -131,7 +118,7 @@ def ascii(arr):
     Returns: array with ascii numbers
 
     """
-    return
+    return arr
 
 
 def alphabet(arr):
