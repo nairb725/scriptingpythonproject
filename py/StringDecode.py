@@ -41,7 +41,7 @@ def remove_equal(str):
     Returns: string with user's input without equal
 
     """
-    return str
+    return arr.replace("=", "")
 
 
 def index_in_alphabet(arr):
@@ -65,7 +65,7 @@ def fill_with_zero(arr):
     Returns:  array with user's binary numbers with added zero
 
     """
-    return arr
+    return [char.zfill(6) for char in arr]
 
 
 def divide_in_eight_part(arr):
