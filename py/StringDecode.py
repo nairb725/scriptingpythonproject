@@ -1,10 +1,10 @@
 def to_string(base64):
     """
-
+        decode a string to base64
     Args:
-        base64:
+        base64: the string value
 
-    Returns:
+    Returns: the string user value
 
     """
     return
@@ -47,66 +47,112 @@ def array():
     """
     return
 
+def alphabet():
+    """
+       match the numbers with the alphabet
+    Args:
+        number: array with user's elements
 
+    Returns: array with user's elements
 
-
-
-
-def num():
-
+    """
     return
 
 def binary(number):
     """
-            decode a number to binary mode
-        Args:
-            number: int
+        convert numbers into binary mode
+    Args:
+        number: array with user's elements
 
-        Returns: binary
+    Returns: array with user's binary numbers
 
-        """
+    """
     return
 
 
 def add ():
+    """
+        if character is not equal to 6 add 0 at the beginning
+    Args:
+        number:  array with user's binary numbers
 
+    Returns:  array with user's binary numbers with added 0
+
+    """
+    return
+
+def one_string ():
+    """
+        will contains all elements in 1 string
+    Args:
+        number:  array with user's binary numbers with added 0
+
+    Returns:  one string with all elements
+
+    """
+    return
+
+def divide_in_eight_part ():
+    """
+        will divide them in part with 8 elements each
+    Args:
+        number: one string with all elements
+
+    Returns:  an array with eight element in each part
+
+    """
     return
 
 def remove_zero ():
+    """
+        if character is not equal to 6 add 0 at the beginning
+    Args:
+        number:  array with user's binary numbers
+
+    Returns:  array with user's binary numbers with added 0
+
+    """
 
     return
 
 
 
-def ascii(binary):
+def ascii():
 
 
     """
-            decode a binary to ascii
-        Args:
-            number: int
+        convert binary numbers in ascii numbers
+    Args:
+        number:  array with user's binary numbers
 
-        Returns: ascii
+    Returns: array with ascii numbers
 
-        """
+    """
     return
 
 
 
 def alphabet():
     """
-            decode a ascii to alphabet
-        Args:
-            number: char
+        convert ascii numbers in alphabet
+    Args:
+        number: array with ascii numbers
 
-        Returns: alpahbet
+    Returns: array with alphabet letters
 
-        """
+    """
     return
 
 
 def byte ():
+    """
+        put elements in one string
+    Args:
+        number: array with alphabet letters
 
+    Returns: string with user's result
+
+    """
     return
 
 
