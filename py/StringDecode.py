@@ -140,7 +140,7 @@ def alphabet(arr):
     Returns: array with alphabet letters
 
     """
-    return
+    return [chr(char - 65) for char in arr]
 
 
 def byte(arr):
