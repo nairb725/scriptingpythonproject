@@ -1,11 +1,11 @@
 
 def string_split(str):
     """
-        that will split element and put them in an array
+        Will split a string for each char and put them in an array
     Args:
-        str: User's input
+        str: a string to split
 
-    Returns: array with user's split input
+    Returns: the array with a char in each cell
 
     """
     return [char for char in str]
@@ -13,11 +13,11 @@ def string_split(str):
 
 def elts_to_ascii(arr):
     """
-        we are going to convert those letters with a ascii tab
+        Convert all char in the array to its equivalent in ascii
     Args:
-        arr: tab with letters
+        arr: list with char
 
-    Returns: tab with letters converted with ascii tab
+    Returns: tab with ascii value
 
     """
     return [ord(char) for char in arr]
@@ -25,11 +25,11 @@ def elts_to_ascii(arr):
 
 def array_to_string(arr):
     """
-        will pul all the element in one string
+        Put all the element of an array in one string
     Args:
-        arr: tab with octet numbers
+        arr: tab with string in each cell
 
-    Returns: all the octet in one string
+    Returns: the recompose string
 
     """
     str = ""

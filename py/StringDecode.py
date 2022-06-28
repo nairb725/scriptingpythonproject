@@ -1,3 +1,6 @@
+from EncodeCommon import *
+
+
 def to_string(base64):
     """
         decode a string to base64
