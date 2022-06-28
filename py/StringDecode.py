@@ -11,14 +11,23 @@ def to_string(base64):
 
     """
     step_1 = remove_equal(base64)
+    print(step_1)
     step_2 = string_split(step_1)
+    print(step_2)
     step_3 = index_in_alphabet(step_2)
+    print(step_3)
     step_4 = fill_with_zero(step_3)
+    print(step_4)
     step_5 = array_to_string(step_4)
+    print(step_5)
     step_6 = divide_in_eight_part(step_5)
+    print(step_6)
     step_7 = remove_last_element(step_6)
+    print(step_7)
     step_8 = remove_first_zero(step_7)
+    print(step_8)
     step_9 = to_ascii(step_8)
+    print(step_9)
     step_10 = array_to_string(step_9)
     return step_10
 
