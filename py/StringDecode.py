@@ -30,7 +30,9 @@ def to_string(base64):
     print(step_8)
     step_9 = to_ascii(step_8)
     print(step_9)
-    step_10 = array_to_string(step_9)
+    step_bonus_2 = to_alphabet(step_9)
+    print(step_bonus_2)
+    step_10 = array_to_string(step_bonus_2)
     return step_10
 
 
@@ -126,3 +128,15 @@ def to_ascii(arr):
 
     """
     return arr.decode()
+
+
+def to_alphabet(arr):
+    """
+
+    Args:
+        arr:
+
+    Returns:
+
+    """
+    return arr
