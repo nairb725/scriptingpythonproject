@@ -1,4 +1,4 @@
-from math import ceil, floor
+from math import ceil
 
 
 def to_base64(str):
@@ -153,9 +153,3 @@ def refill_string(str):
 
     """
     return str.ljust(ceil(len(str)/8)*8, "=")
-
-
-# Taking an input values from user
-values = input("Enter the Values: ")
-
-print(to_base64(values))
