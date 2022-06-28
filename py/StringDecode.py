@@ -98,7 +98,8 @@ def remove_last_element(arr):
     Returns:  array with user's binary numbers without the last element
 
     """
-
+    if(arr[len(arr)-1] != 8):
+        arr.pop()
     return arr
 
 
