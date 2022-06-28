@@ -70,7 +70,7 @@ def fill_with_zero(arr):
     return [char.zfill(6) for char in arr]
 
 
-def divide_in_eight_part(arr):
+def divide_in_eight_part(str):
     """
         will divide them in part with eight elements each
     Args:
@@ -79,6 +79,13 @@ def divide_in_eight_part(arr):
     Returns:  an array with eight element in each part
 
     """
+    arr = []
+    n = 8  # the index to cut the string for the base64
+
+    # split the whole string into string of 6 character each
+    for index in range(0, len(str), n):
+        arr.append(str[index: index + n])
+
     return arr
 
 
@@ -92,7 +99,7 @@ def remove_last_element(arr):
 
     """
 
-    return
+    return arr
 
 
 def remove_first_zero(arr):
@@ -105,7 +112,7 @@ def remove_first_zero(arr):
 
     """
 
-    return arr.replace("0", "")
+    return [char.replace("0", "", 1) for char in arr]
 
 
 def to_ascii(arr):
