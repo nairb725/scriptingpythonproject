@@ -127,7 +127,7 @@ def to_ascii(arr):
     Returns: array with ascii numbers
 
     """
-    return [int(char) for char in arr]
+    return [int("0b"+char, 2) for char in arr]
 
 
 def to_alphabet(arr):
