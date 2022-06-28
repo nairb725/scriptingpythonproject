@@ -1,4 +1,5 @@
 from math import ceil
+from EncodeCommon import *
 
 
 def to_base64(str):
@@ -10,42 +11,18 @@ def to_base64(str):
     Returns: the string base64 value
 
     """
-    step_1 = split(str)
-    step_2 = to_ascii(step_1)
+    step_1 = string_split(str)
+    step_2 = elts_to_ascii(step_1)
     step_3 = binary(step_2)
     step_4 = make_octet(step_3)
-    step_5 = to_string(step_4)
+    step_5 = array_to_string(step_4)
     step_6 = cut_bin_6char(step_5)
     step_7 = refill_arr(step_6)
     step_8 = bin_to_base10(step_7)
     step_9 = to_char(step_8)
-    step_10 = to_string(step_9)
+    step_10 = array_to_string(step_9)
     step_11 = refill_string(step_10)
     return step_11
-
-
-def split(str):
-    """
-        that will split element and put them in an array
-    Args:
-        str: User's input
-
-    Returns: array with user's split input
-
-    """
-    return [char for char in str]
-
-
-def to_ascii(arr):
-    """
-        we are going to convert those letters with a ascii tab
-    Args:
-        arr: tab with letters
-
-    Returns: tab with letters converted with ascii tab
-
-    """
-    return [ord(char) for char in arr]
 
 
 def binary(arr):
@@ -70,22 +47,6 @@ def make_octet(arr):
 
     """
     return [char.zfill(8) for char in arr]
-
-
-def to_string(arr):
-    """
-        will pul all the element in one string
-    Args:
-        arr: tab with octet numbers
-
-    Returns: all the octet in one string
-
-    """
-    str = ""
-    for i in arr:
-        str += i
-
-    return str
 
 
 def cut_bin_6char(str):
