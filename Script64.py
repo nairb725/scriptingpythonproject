@@ -113,7 +113,7 @@ def refill_arr(arr):
     Returns: an array with base 64 elements completed
 
     """
-    return arr
+    return [char.zfill(6) for char in arr]
 
 
 def bin_to_ascii(arr):
