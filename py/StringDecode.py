@@ -118,7 +118,7 @@ def ascii(arr):
     Returns: array with ascii numbers
 
     """
-    return arr
+    return arr.decode()
 
 
 def alphabet(arr):
@@ -130,7 +130,7 @@ def alphabet(arr):
     Returns: array with alphabet letters
 
     """
-    return [chr(char - 65) for char in arr]
+    return [(ord(char) - 65) for char in arr]
 
 
 def byte(str):
