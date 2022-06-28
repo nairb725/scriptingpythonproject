@@ -41,7 +41,7 @@ def remove_equal(str):
     Returns: string with user's input without equal
 
     """
-    return str
+    return str.replace("=", "")
 
 
 def index_in_alphabet(arr):
