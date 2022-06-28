@@ -108,15 +108,15 @@ def divide_in_eight_part(arr):
 
 def remove_zero(arr):
     """
-        if character is not equal to 6 add 0 at the beginning
+      if there a 0 at the beginning remove it
     Args:
         arr:  array with user's binary numbers
 
-    Returns:  array with user's binary numbers with added 0
+    Returns:  array with user's binary numbers without 0
 
     """
 
-    return
+    return arr.replace("0", "")
 
 
 def ascii(arr):
@@ -143,7 +143,7 @@ def alphabet(arr):
     return [chr(char - 65) for char in arr]
 
 
-def byte(arr):
+def byte(str):
     """
         put elements in one string
     Args:
@@ -152,4 +152,9 @@ def byte(arr):
     Returns: string with user's result
 
     """
-    return
+    str = ""
+    for i in arr:
+        str += i
+
+    return str
+
