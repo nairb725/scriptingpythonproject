@@ -54,7 +54,7 @@ def binary(arr):
     Returns: tab with binary numbers
 
     """
-    return [bin(int(char)) for char in arr]
+    return [str(bin(int(char)))[2:] for char in arr]
 
 
 def byte(arr):
@@ -66,7 +66,7 @@ def byte(arr):
     Returns: tab with octet numbers
 
     """
-    return [bytes(char) for char in arr]
+    return [char.zfill(8) for char in arr]
 
 
 def to_string(arr):
