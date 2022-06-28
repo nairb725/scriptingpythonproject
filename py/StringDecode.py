@@ -1,4 +1,4 @@
-from EncodeCommon import *
+from py.EncodeCommon import *
 
 
 def to_string(base64):
@@ -12,16 +12,15 @@ def to_string(base64):
     """
     step_1 = remove_equal(base64)
     step_2 = string_split(step_1)
-    step_3 = elts_to_ascii(step_2)
-    step_4 = make_octet(step_3)
+    step_3 = index_in_alphabet(step_2)
+    step_4 = fill_with_zero(step_3)
     step_5 = array_to_string(step_4)
-    step_6 = cut_bin_6char(step_5)
-    step_7 = refill_arr(step_6)
-    step_8 = bin_to_base10(step_7)
-    step_9 = to_char(step_8)
+    step_6 = divide_in_eight_part(step_5)
+    step_7 = remove_last_element(step_6)
+    step_8 = remove_first_zero(step_7)
+    step_9 = to_ascii(step_8)
     step_10 = array_to_string(step_9)
-    step_11 = array_to_string(step_10)
-    return step_11
+    return step_10
 
 
 def remove_equal(str):
@@ -36,92 +35,7 @@ def remove_equal(str):
     return str
 
 
-def array(arr):
-    """
-        put all element in an array
-    Args:
-        arr: string with user's input without equal
-
-    Returns: array with user's elements
-
-    """
-    return arr
-
-
-def binary(arr):
-    """
-        convert numbers into binary mode
-    Args:
-        arr: array with user's elements
-
-    Returns: array with user's binary numbers
-
-    """
-    return arr
-
-
-def add(arr):
-    """
-        if character is not equal to 6 add 0 at the beginning
-    Args:
-        arr:  array with user's binary numbers
-
-    Returns:  array with user's binary numbers with added 0
-
-    """
-    return arr
-
-
-def one_string(arr):
-    """
-        will contains all elements in 1 string
-    Args:
-        arr:  array with user's binary numbers with added 0
-
-    Returns:  one string with all elements
-
-    """
-    return arr
-
-
-def divide_in_eight_part(arr):
-    """
-        will divide them in part with 8 elements each
-    Args:
-        arr: one string with all elements
-
-    Returns:  an array with eight element in each part
-
-    """
-    return arr
-
-
-def remove_zero(arr):
-    """
-      if there a 0 at the beginning remove it
-    Args:
-        arr:  array with user's binary numbers
-
-    Returns:  array with user's binary numbers without 0
-
-    """
-
-    return arr.replace("0", "")
-
-
-def ascii(arr):
-    """
-        convert binary numbers in ascii numbers
-    Args:
-        arr:  array with user's binary numbers
-
-    Returns: array with ascii numbers
-
-    """
-    return arr.decode()
-
-
-def alphabet(arr):
+def index_in_alphabet(arr):
     """
         convert ascii numbers in alphabet
     Args:
@@ -133,18 +47,63 @@ def alphabet(arr):
     return [(ord(char) - 65) for char in arr]
 
 
-def byte(str):
+def fill_with_zero(arr):
     """
-        put elements in one string
+        if character is not equal to six add zero at the beginning
     Args:
-        arr: array with alphabet letters
+        arr:  array with user's binary numbers
 
-    Returns: string with user's result
+    Returns:  array with user's binary numbers with added zero
 
     """
-    str = ""
-    for i in arr:
-        str += i
+    return arr
 
-    return str
 
+def divide_in_eight_part(arr):
+    """
+        will divide them in part with eight elements each
+    Args:
+        arr: one string with all elements
+
+    Returns:  an array with eight element in each part
+
+    """
+    return arr
+
+
+def remove_last_element(arr):
+    """
+      if there an element at the end it will remove it
+    Args:
+        arr:  array with user's binary numbers
+
+    Returns:  array with user's binary numbers without the last element
+
+    """
+
+    return arr.replace("0", "")
+
+
+def remove_first_zero(arr):
+    """
+      if there an zero at the beginning it will remove it
+    Args:
+        arr:  array with user's binary numbers
+
+    Returns:  array without zero
+
+    """
+
+    return arr.replace("0", "")
+
+
+def to_ascii(arr):
+    """
+        convert binary numbers in ascii numbers
+    Args:
+        arr:  array with user's binary numbers
+
+    Returns: array with ascii numbers
+
+    """
+    return arr.decode()

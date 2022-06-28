@@ -25,3 +25,15 @@ def array_to_string(arr):
         str += i
 
     return str
+
+
+def binary(arr):
+    """
+        we are going convert this numbers in binary
+    Args:
+        arr: tab with letters converted with ascii tab
+
+    Returns: tab with binary numbers
+
+    """
+    return [str(bin(int(char)))[2:] for char in arr]

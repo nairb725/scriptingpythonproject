@@ -4,4 +4,4 @@ from py.StringEncode import *
 # Taking an input values from user
 values = input("Enter the Values: ")
 
-print(to_base64(values))
+print(to_string(values))

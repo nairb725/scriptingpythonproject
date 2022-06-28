@@ -1,5 +1,5 @@
 from math import ceil
-from EncodeCommon import *
+from py.EncodeCommon import *
 
 
 def to_base64(str):
