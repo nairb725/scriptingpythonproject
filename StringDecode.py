@@ -1,4 +1,3 @@
-
 def binary():
     """
             decode a number to binary mode
@@ -11,9 +10,7 @@ def binary():
     return
 
 
-
 def ascii():
-
     """
             decode a binary to ascii
         Args:
@@ -24,8 +21,8 @@ def ascii():
         """
     return
 
-def alphabet():
 
+def alphabet():
     """
             decode a ascii to alphabet
         Args:
@@ -35,4 +32,3 @@ def alphabet():
 
         """
     return
-
