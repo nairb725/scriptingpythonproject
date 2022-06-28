@@ -16,7 +16,9 @@ def to_string(base64):
     print(step_2)
     step_3 = index_in_alphabet(step_2)
     print(step_3)
-    step_4 = fill_with_zero(step_3)
+    step_bonus = binary(step_3)
+    print(step_bonus)
+    step_4 = fill_with_zero(step_bonus)
     print(step_4)
     step_5 = array_to_string(step_4)
     print(step_5)
@@ -41,7 +43,7 @@ def remove_equal(str):
     Returns: string with user's input without equal
 
     """
-    return arr.replace("=", "")
+    return str.replace("=", "")
 
 
 def index_in_alphabet(arr):
@@ -90,7 +92,7 @@ def remove_last_element(arr):
 
     """
 
-    return arr.replace("0", "")
+    return
 
 
 def remove_first_zero(arr):
