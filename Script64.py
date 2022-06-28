@@ -1,5 +1,13 @@
-def main(values):
-    ticket_1 = split(values)
+def main(str):
+    """
+        encode a string to base64
+    Args:
+        str: the string value
+
+    Returns: the string base64 value
+
+    """
+    ticket_1 = split(str)
     print(ticket_1)
     ticket_2 = to_ascii(ticket_1)
     print(ticket_2)
@@ -13,12 +21,14 @@ def main(values):
     print(ticket_6)
     ticket_7 = refill_arr(ticket_6)
     print(ticket_7)
-    ticket_8 = bin_to_ascii(ticket_7)
+    ticket_8 = bin_to_base10(ticket_7)
     print(ticket_8)
     ticket_9 = to_char(ticket_8)
     print(ticket_9)
-    ticket_10 = refill_string(ticket_9)
+    ticket_10 = to_string(ticket_8)
     print(ticket_10)
+    ticket_11 = refill_string(ticket_10)
+    return ticket_11
 
 
 def split(str):
@@ -116,7 +126,7 @@ def refill_arr(arr):
     return [char.zfill(6) for char in arr]
 
 
-def bin_to_ascii(arr):
+def bin_to_base10(arr):
     """
         we convert array with base 64 elements to base 10
     Args:
@@ -125,7 +135,7 @@ def bin_to_ascii(arr):
     Returns: an array with base 10 elements
 
     """
-    return arr
+    return [int(char, 2) for char in arr]
 
 
 def to_char(arr):
@@ -134,7 +144,7 @@ def to_char(arr):
     Args:
         arr: an array with base 10 elements
 
-    Returns:  an array with ascii's letters
+    Returns: an array with ascii's letters
 
     """
     return arr
@@ -155,4 +165,4 @@ def refill_string(str):
 # Taking an input values from user
 values = input("Enter the Values: ")
 
-main(values)
+print(main(values))
