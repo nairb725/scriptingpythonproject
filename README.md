@@ -1,1 +1,5 @@
 # scriptingpythonproject
+
+Mention :
+ARGPARSE
+LOGGING
