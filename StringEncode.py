@@ -1,7 +1,7 @@
 from math import ceil, floor
 
 
-def main(str):
+def to_base64(str):
     """
         encode a string to base64
     Args:
@@ -10,28 +10,18 @@ def main(str):
     Returns: the string base64 value
 
     """
-    ticket_1 = split(str)
-    print(ticket_1)
-    ticket_2 = to_ascii(ticket_1)
-    print(ticket_2)
-    ticket_3 = binary(ticket_2)
-    print(ticket_3)
-    ticket_4 = byte(ticket_3)
-    print(ticket_4)
-    ticket_5 = to_string(ticket_4)
-    print(ticket_5)
-    ticket_6 = to_base64(ticket_5)
-    print(ticket_6)
-    ticket_7 = refill_arr(ticket_6)
-    print(ticket_7)
-    ticket_8 = bin_to_base10(ticket_7)
-    print(ticket_8)
-    ticket_9 = to_char(ticket_8)
-    print(ticket_9)
-    ticket_10 = to_string(ticket_9)
-    print(ticket_10)
-    ticket_11 = refill_string(ticket_10)
-    return ticket_11
+    step_1 = split(str)
+    step_2 = to_ascii(step_1)
+    step_3 = binary(step_2)
+    step_4 = byte(step_3)
+    step_5 = to_string(step_4)
+    step_6 = cut_bin_6char(step_5)
+    step_7 = refill_arr(step_6)
+    step_8 = bin_to_base10(step_7)
+    step_9 = to_char(step_8)
+    step_10 = to_string(step_9)
+    step_11 = refill_string(step_10)
+    return step_11
 
 
 def split(str):
@@ -98,7 +88,7 @@ def to_string(arr):
     return str
 
 
-def to_base64(str):
+def cut_bin_6char(str):
     """
         we are going to convert octet in base 64 and put all the elements in an array
     Args:
@@ -168,4 +158,4 @@ def refill_string(str):
 # Taking an input values from user
 values = input("Enter the Values: ")
 
-print(main(values))
+print(to_base64(values))
