@@ -8,8 +8,6 @@ parser.add_argument("Base64")
 parser.add_subparsers("encode", "decode")
 #group.add_argument("-S", "-f")
 
-
-
 # subparsers = parser.add_subparsers("encode", "decode")
 
 # Taking an input values from user
