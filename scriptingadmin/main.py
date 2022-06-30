@@ -12,6 +12,7 @@ args = parser.parse_args()
 a = True
 if args.interval:
     print("Fetching data...")
+    print("Tap CTRL + C to quit the program")
     while a:
         try:
             metrics()
