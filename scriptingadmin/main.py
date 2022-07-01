@@ -5,7 +5,7 @@ from ScriptAdmin import *
 
 # Create the parser and add arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("-i", "--interval", help='nombre_de_secondes', type=float)
+parser.add_argument("-i", "--interval", help='number_of_seconds', type=float)
 
 # Parse and print the results
 args = parser.parse_args()
