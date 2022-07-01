@@ -1,8 +1,5 @@
 import psutil
-import json
-# from influxdb import InfluxDBClient
-from datetime import datetime
-from influxdb_client import InfluxDBClient, Point, WritePrecision
+from influxdb_client import InfluxDBClient
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 # You can generate an API token from the "API Tokens Tab" in the UI
@@ -13,7 +10,7 @@ bucket = "scripting"
 
 def metrics():
     """
-      link to influx bdd/create databse/get computer information§right it down on the bdd and stop the program
+      link to influx bdd/create database/get computer information§right it down on the bdd and stop the program
     """
 
     with InfluxDBClient(url="http://localhost:8086", token=token, org=org) as client:
@@ -29,4 +26,3 @@ def metrics():
         }
         print(data)
         write_api.write(bucket, org, data)
-
